@@ -5,6 +5,13 @@
 
 ### 安装
 
+```zzz
+src
+
+https://github.com/guixianleng/vue-vite-cesium
+
+```
+
 ```shell
 npm i vite-plugin-cesium vite -D
 # yarn add vite-plugin-cesium vite -D

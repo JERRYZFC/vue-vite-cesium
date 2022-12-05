@@ -1,5 +1,6 @@
 <template>
   <cesium-map @select="handleSelect" @map-ready="mapReady" v-model="value" />
+  <panel-menu v-model:visible="panelVisible" />
 </template>
 <script setup lang="ts">
   import { ref } from 'vue'
@@ -12,6 +13,7 @@
   const handleSelect = (value: string) => {
     router.push({ name: value })
   }
+  const panelVisible = ref<boolean>(false)
 
   const mapReady = () => {
     useSetOSMBuildings(window.CViewer)

@@ -1,7 +1,10 @@
 <template>
-  <a-config-provider>
-    <router-view />
-  </a-config-provider>
+  <div>
+    <a-config-provider>
+      <div id="zzz">HelloZZXX</div>
+      <router-view />
+    </a-config-provider>
+  </div>
 </template>
 
 <script lang="ts" setup></script>
@@ -21,6 +24,13 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     height: 100%;
+
+    #zzz {
+      z-index: 1000;
+      height: 100px;
+      width: 100px;
+      background: aqua;
+    }
   }
 
   ::-webkit-scrollbar {
